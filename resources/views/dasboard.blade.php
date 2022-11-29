@@ -42,11 +42,11 @@
                                             </tr>
                                             <tr>
                                                 <th><strong>Umur </strong></th>
-                                                <td>: {{ $data['umur'] }}</td>
+                                                <td>: {{ $data['umur'] }} tahun</td>
                                             </tr>
                                             <tr>
                                                 <th><strong>Saran Penggunaan </strong></th>
-                                                <td>: {{ $data['saran'] .", ". $data['penggunaan'] }}</td>
+                                                <td>: {{ $data['saran'] .", ". $data['penggunaan'].' sehari' }}</td>
                                             </tr>
                                         </tbody>
                                     @endisset
