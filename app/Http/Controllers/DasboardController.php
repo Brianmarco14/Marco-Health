@@ -143,7 +143,7 @@ class penggunaan extends Jamu
         if ($this->namaJamu() == "Beras Kencur" && $this->keluhan == "keseleo") {
             return "Dioleskan";
         } else {
-            return "Dioleskan";
+            return "Dikonsumsi";
 
         }
         

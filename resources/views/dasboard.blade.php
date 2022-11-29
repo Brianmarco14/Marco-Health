@@ -10,7 +10,7 @@
 
                     <div class="card p-5">
                         <div class="row">
-                            <div class="col-6 p-3">
+                            <div class="col-4 card p-3">
                                 <form action="{{ route('dasboard.store') }}" method="POST">
                                     @csrf
                                     <div class="mb-3 form-floating">
@@ -18,13 +18,35 @@
                                         <label for="formFloatingInput">Tahun Lahir</label>
                                     </div>
                                     <div class="mb-3 form-floating">
-                                        <input type="text" class="form-control" name="keluhan" required>
-                                        <label for="formFloatingInput">Keluhan</label>
+                                        <select name="keluhan" id="" class="form-select" required>
+                                            <option value="" disabled selected>Pilih Keluhan</option>
+                                                <option value="keseleo">
+                                                    keseleo
+                                                </option>
+                                                <option value="kurang nafsu makan">
+                                                    kurang nafsu makan
+                                                </option>
+                                                <option value="pegal-pegal">
+                                                    pegal-pegal
+                                                </option>
+                                                <option value="darah tinggi">
+                                                    darah tinggi
+                                                </option>
+                                                <option value="gula darah">
+                                                    gula darah
+                                                </option>
+                                                <option value="keram perut">
+                                                    keram perut
+                                                </option>
+                                                <option value="masuk angin">
+                                                    masuk angin
+                                                </option>
+                                        </select>
                                     </div>
                                     <button type="submit" class="btn btn-primary"> Check </button>
                                 </form>
                             </div>
-                            <div class="col-6 p-3">
+                            <div class="col-7 ms-1 card p-3">
                                 <table>
                                     @isset($data)
                                         <tbody>
@@ -34,7 +56,7 @@
                                             </tr>
                                             <tr>
                                                 <th><strong>Khasiat </strong></th>
-                                                <td>: menyembuhkan {{ $data['khasiat'] }}</td>
+                                                <td>: Menyembuhkan {{ $data['khasiat'] }}</td>
                                             </tr>
                                             <tr>
                                                 <th><strong>Keluhan </strong></th>

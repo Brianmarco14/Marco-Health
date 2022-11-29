@@ -38,7 +38,7 @@
                 <a class="nav-link mx-3" href="{{ url('dasboard') }}">
                     Rekomendasi
                 </a>
-                <a class="nav-link mx-3" href="{{ url('post') }}">
+                <a class="nav-link me-3" href="{{ url('post') }}">
                     Postingan
                 </a>
                 <a class="nav-link me-3" href="{{ url('produk') }}">
